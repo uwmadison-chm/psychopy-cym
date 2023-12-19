@@ -1,8 +1,8 @@
-﻿targetLetter,difficulty
-T,easy
-L,hard
-L,hard
-L,hard
-T,hard
-T,hard
-T,hard
+﻿targetLetter,isDifficult
+T,0
+L,1
+L,1
+L,1
+T,1
+T,1
+T,1
