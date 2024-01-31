@@ -92,8 +92,8 @@
       <CodeComponent name="declarations" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="difficultTargetDuration=0.06&amp;#10;responseKeys=[['b','index finger button'],['y','middle finger button']]&amp;#10;if expInfo['inputType']=='k':&amp;#10;    responseKeys=[['f','F key'],['j','J key']]&amp;#10;&amp;#10;def generateTargetString(targetLetter, position):&amp;#10;    return position * 'X' + targetLetter + (7 - position) * 'X'&amp;#10;&amp;#10;def getTargetDuration(isDifficult):&amp;#10;    return difficultTargetDuration if isDifficult else 0.15&amp;#10;    &amp;#10;def answeredCorrectly(targetLetter, responseKey):&amp;#10;    if targetLetter == 'T' and responseKey == keyForT():&amp;#10;        return True&amp;#10;    elif targetLetter == 'L' and responseKey == keyForL():&amp;#10;        return True&amp;#10;    return False&amp;#10;    &amp;#10;def keyForT():&amp;#10;    return responseKeys[0][0]&amp;#10;    &amp;#10;def keyForL():&amp;#10;    return responseKeys[1][0]&amp;#10;    &amp;#10;def getFeedbackColor(isCorrect, accurateFeedback):&amp;#10;    if isCorrect:&amp;#10;        if accurateFeedback:&amp;#10;            return &quot;green&quot;&amp;#10;        else:&amp;#10;            return &quot;red&quot;&amp;#10;    elif accurateFeedback:&amp;#10;        return &quot;red&quot;&amp;#10;    return &quot;green&quot;&amp;#10; &amp;#10;def getFeedbackText(isCorrect, accurateFeedback):&amp;#10;    if isCorrect:&amp;#10;        if accurateFeedback:&amp;#10;            return &quot;+ correct +&quot;&amp;#10;        else:&amp;#10;            return &quot;x wrong x&quot;&amp;#10;    elif accurateFeedback:&amp;#10;        return &quot;x wrong x&quot;&amp;#10;    return &quot;+ correct +&quot;&amp;#10;       " valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="difficultTargetDuration = 0.06;&amp;#10;responseKeys = [[&quot;b&quot;, &quot;index finger button&quot;], [&quot;y&quot;, &quot;middle finger button&quot;]];&amp;#10;if ((expInfo[&quot;inputType&quot;] === &quot;k&quot;)) {&amp;#10;    responseKeys = [[&quot;f&quot;, &quot;F key&quot;], [&quot;j&quot;, &quot;J key&quot;]];&amp;#10;}&amp;#10;function generateTargetString(targetLetter, position) {&amp;#10;    return (((position * &quot;X&quot;) + targetLetter) + ((7 - position) * &quot;X&quot;));&amp;#10;}&amp;#10;function getTargetDuration(isDifficult) {&amp;#10;    return (isDifficult ? difficultTargetDuration : 0.15);&amp;#10;}&amp;#10;function answeredCorrectly(targetLetter, responseKey) {&amp;#10;    if (((targetLetter === &quot;T&quot;) &amp;&amp; (responseKey === keyForT()))) {&amp;#10;        return true;&amp;#10;    } else {&amp;#10;        if (((targetLetter === &quot;L&quot;) &amp;&amp; (responseKey === keyForL()))) {&amp;#10;            return true;&amp;#10;        }&amp;#10;    }&amp;#10;    return false;&amp;#10;}&amp;#10;function keyForT() {&amp;#10;    return responseKeys[0][0];&amp;#10;}&amp;#10;function keyForL() {&amp;#10;    return responseKeys[1][0];&amp;#10;}&amp;#10;function getFeedbackColor(isCorrect, accurateFeedback) {&amp;#10;    if (isCorrect) {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;green&quot;;&amp;#10;        } else {&amp;#10;            return &quot;red&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;red&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;    return &quot;green&quot;;&amp;#10;}&amp;#10;function getFeedbackText(isCorrect, accurateFeedback) {&amp;#10;    if (isCorrect) {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;+ correct +&quot;;&amp;#10;        } else {&amp;#10;            return &quot;x wrong x&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;x wrong x&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;    return &quot;+ correct +&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="difficultTargetDuration=0.06&amp;#10;responseKeys=[['b','index finger button'],['y','middle finger button']]&amp;#10;if expInfo['inputType']=='k':&amp;#10;    responseKeys=[['t','T key'],['l','L key']]&amp;#10;&amp;#10;def generateTargetString(targetLetter, position):&amp;#10;    return position * 'X' + targetLetter + (7 - position) * 'X'&amp;#10;&amp;#10;def getTargetDuration(isDifficult):&amp;#10;    return difficultTargetDuration if isDifficult else 0.15&amp;#10;    &amp;#10;def answeredCorrectly(targetLetter, responseKey):&amp;#10;    if targetLetter == 'T' and responseKey == keyForT():&amp;#10;        return True&amp;#10;    elif targetLetter == 'L' and responseKey == keyForL():&amp;#10;        return True&amp;#10;    return False&amp;#10;    &amp;#10;def keyForT():&amp;#10;    return responseKeys[0][0]&amp;#10;    &amp;#10;def keyForL():&amp;#10;    return responseKeys[1][0]&amp;#10;    &amp;#10;def getFeedbackColor(isCorrect, accurateFeedback):&amp;#10;    if isCorrect:&amp;#10;        if accurateFeedback:&amp;#10;            return &quot;green&quot;&amp;#10;        else:&amp;#10;            return &quot;red&quot;&amp;#10;    elif accurateFeedback:&amp;#10;        return &quot;red&quot;&amp;#10;    return &quot;green&quot;&amp;#10; &amp;#10;def getFeedbackText(isCorrect, accurateFeedback):&amp;#10;    if isCorrect:&amp;#10;        if accurateFeedback:&amp;#10;            return &quot;+ correct +&quot;&amp;#10;        else:&amp;#10;            return &quot;x wrong x&quot;&amp;#10;    elif accurateFeedback:&amp;#10;        return &quot;x wrong x&quot;&amp;#10;    return &quot;+ correct +&quot;&amp;#10;       " valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="difficultTargetDuration = 0.06;&amp;#10;responseKeys = [[&quot;b&quot;, &quot;index finger button&quot;], [&quot;y&quot;, &quot;middle finger button&quot;]];&amp;#10;if ((expInfo[&quot;inputType&quot;] === &quot;k&quot;)) {&amp;#10;    responseKeys = [[&quot;t&quot;, &quot;T key&quot;], [&quot;l&quot;, &quot;L key&quot;]];&amp;#10;}&amp;#10;function generateTargetString(targetLetter, position) {&amp;#10;    return (((position * &quot;X&quot;) + targetLetter) + ((7 - position) * &quot;X&quot;));&amp;#10;}&amp;#10;function getTargetDuration(isDifficult) {&amp;#10;    return (isDifficult ? difficultTargetDuration : 0.15);&amp;#10;}&amp;#10;function answeredCorrectly(targetLetter, responseKey) {&amp;#10;    if (((targetLetter === &quot;T&quot;) &amp;&amp; (responseKey === keyForT()))) {&amp;#10;        return true;&amp;#10;    } else {&amp;#10;        if (((targetLetter === &quot;L&quot;) &amp;&amp; (responseKey === keyForL()))) {&amp;#10;            return true;&amp;#10;        }&amp;#10;    }&amp;#10;    return false;&amp;#10;}&amp;#10;function keyForT() {&amp;#10;    return responseKeys[0][0];&amp;#10;}&amp;#10;function keyForL() {&amp;#10;    return responseKeys[1][0];&amp;#10;}&amp;#10;function getFeedbackColor(isCorrect, accurateFeedback) {&amp;#10;    if (isCorrect) {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;green&quot;;&amp;#10;        } else {&amp;#10;            return &quot;red&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;red&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;    return &quot;green&quot;;&amp;#10;}&amp;#10;function getFeedbackText(isCorrect, accurateFeedback) {&amp;#10;    if (isCorrect) {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;+ correct +&quot;;&amp;#10;        } else {&amp;#10;            return &quot;x wrong x&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if (accurateFeedback) {&amp;#10;            return &quot;x wrong x&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;    return &quot;+ correct +&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
@@ -156,9 +156,9 @@
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="5" valType="code" updates="None" name="startVal"/>
+        <Param val="8" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="The computer will then provide you with feedback on your choice. The feedback may not always be 100% accurate.&amp;#10;&amp;#10;Immediately after the feedback the same trial will be presented again, so you will have the chance to change your mind if you wish." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -198,30 +198,11 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="7" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$&quot;Press the &quot; + responseKeys[0][1] + &quot; if the letter was T.\n\nPress the &quot; + responseKeys[1][1] + &quot; if the letter was L.&quot;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="$&quot;If you see the letter T, press the &quot; + responseKeys[0][1] + &quot;.\n\nIf you see the letter L, press the &quot; + responseKeys[1][1] + &quot;.&quot;" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
-      <KeyboardComponent name="end_instr" plugin="None">
-        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="end_instr" valType="code" updates="None" name="name"/>
-        <Param val="press" valType="str" updates="constant" name="registerOn"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
       <CodeComponent name="hide_mouse" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -545,8 +526,8 @@
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
+        <Param val="$120 + preFeedbackInterval" valType="code" updates="constant" name="stopVal"/>
         <Param val="last key" valType="str" updates="constant" name="store"/>
         <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
@@ -591,6 +572,46 @@
         <Param val="XXXXXXXX" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
+      <TextboxComponent name="pre_feedback_delay_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="pre_feedback_delay_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(None, None)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="$target_masked.status==FINISHED" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
+        <Param val="$preFeedbackInterval" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
       <CodeComponent name="update_target_duration" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -625,46 +646,6 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <TextboxComponent name="pre_feedback_delay" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="alignment"/>
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="editable"/>
-        <Param val="None" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="pre_feedback_delay" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="visible" valType="str" updates="constant" name="overflow"/>
-        <Param val="0" valType="num" updates="constant" name="padding"/>
-        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(None, None)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="list" updates="constant" name="speechPoint"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$target_masked.status==FINISHED" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
-        <Param val="$preFeedbackInterval" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="" valType="str" updates="constant" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </TextboxComponent>
       <TextboxComponent name="feedback" plugin="None">
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
@@ -697,8 +678,8 @@
         <Param val="(2, 3)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$pre_feedback_delay.status==FINISHED" valType="code" updates="None" name="startVal"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -1056,10 +1037,68 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
     </Routine>
+    <Routine name="countdown_2">
+      <RoutineSettingsComponent name="countdown_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="countdown_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextboxComponent name="countdown_3" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.18" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="countdown_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$round(5 - t)" valType="str" updates="set every frame" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="code"/>
     <Routine name="instr_demo"/>
+    <Routine name="countdown_2"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('targetLetter', 'T'), ('isDifficult', 0), ('itiFrames', 127), ('preFeedbackInterval', 111), ('postFeedbackInterval', 144), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 0), ('itiFrames', 316), ('preFeedbackInterval', 177), ('postFeedbackInterval', 116), ('accurateFeedback', 1), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 0), ('itiFrames', 252), ('preFeedbackInterval', 84), ('postFeedbackInterval', 81), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 0), ('itiFrames', 312), ('preFeedbackInterval', 86), ('postFeedbackInterval', 152), ('accurateFeedback', 1), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 155), ('preFeedbackInterval', 168), ('postFeedbackInterval', 147), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 205), ('preFeedbackInterval', 127), ('postFeedbackInterval', 64), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 293), ('preFeedbackInterval', 159), ('postFeedbackInterval', 109), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 147), ('preFeedbackInterval', 110), ('postFeedbackInterval', 73), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 153), ('preFeedbackInterval', 123), ('postFeedbackInterval', 155), ('accurateFeedback', 0), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 174), ('preFeedbackInterval', 86), ('postFeedbackInterval', 97), ('accurateFeedback', 0), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 169), ('preFeedbackInterval', 76), ('postFeedbackInterval', 89), ('accurateFeedback', 0), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 0), ('itiFrames', 168), ('preFeedbackInterval', 86), ('postFeedbackInterval', 79), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 308), ('preFeedbackInterval', 101), ('postFeedbackInterval', 63), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 340), ('preFeedbackInterval', 165), ('postFeedbackInterval', 78), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 161), ('preFeedbackInterval', 76), ('postFeedbackInterval', 91), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 149), ('preFeedbackInterval', 97), ('postFeedbackInterval', 88), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 138), ('preFeedbackInterval', 172), ('postFeedbackInterval', 104), ('accurateFeedback', 0), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 213), ('preFeedbackInterval', 105), ('postFeedbackInterval', 141), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 324), ('preFeedbackInterval', 142), ('postFeedbackInterval', 140), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 300), ('preFeedbackInterval', 61), ('postFeedbackInterval', 75), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 289), ('preFeedbackInterval', 162), ('postFeedbackInterval', 108), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 334), ('preFeedbackInterval', 109), ('postFeedbackInterval', 135), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 153), ('preFeedbackInterval', 98), ('postFeedbackInterval', 178), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 237), ('preFeedbackInterval', 69), ('postFeedbackInterval', 109), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 0), ('itiFrames', 306), ('preFeedbackInterval', 136), ('postFeedbackInterval', 162), ('accurateFeedback', 1), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 187), ('preFeedbackInterval', 65), ('postFeedbackInterval', 105), ('accurateFeedback', 0), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 230), ('preFeedbackInterval', 121), ('postFeedbackInterval', 150), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 193), ('preFeedbackInterval', 178), ('postFeedbackInterval', 70), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 198), ('preFeedbackInterval', 179), ('postFeedbackInterval', 71), ('accurateFeedback', 0), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 284), ('preFeedbackInterval', 98), ('postFeedbackInterval', 126), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 203), ('preFeedbackInterval', 68), ('postFeedbackInterval', 174), ('accurateFeedback', 0), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 345), ('preFeedbackInterval', 127), ('postFeedbackInterval', 81), ('accurateFeedback', 0), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 138), ('preFeedbackInterval', 145), ('postFeedbackInterval', 66), ('accurateFeedback', 0), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 348), ('preFeedbackInterval', 150), ('postFeedbackInterval', 169), ('accurateFeedback', 0), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 260), ('preFeedbackInterval', 172), ('postFeedbackInterval', 61), ('accurateFeedback', 0), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 229), ('preFeedbackInterval', 101), ('postFeedbackInterval', 153), ('accurateFeedback', 0), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 227), ('preFeedbackInterval', 67), ('postFeedbackInterval', 78), ('accurateFeedback', 1), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 221), ('preFeedbackInterval', 139), ('postFeedbackInterval', 115), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 222), ('preFeedbackInterval', 138), ('postFeedbackInterval', 99), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 183), ('preFeedbackInterval', 172), ('postFeedbackInterval', 100), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 0), ('itiFrames', 194), ('preFeedbackInterval', 68), ('postFeedbackInterval', 154), ('accurateFeedback', 1), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 237), ('preFeedbackInterval', 71), ('postFeedbackInterval', 97), ('accurateFeedback', 1), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 144), ('preFeedbackInterval', 142), ('postFeedbackInterval', 114), ('accurateFeedback', 1), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 347), ('preFeedbackInterval', 180), ('postFeedbackInterval', 117), ('accurateFeedback', 1), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 360), ('preFeedbackInterval', 114), ('postFeedbackInterval', 130), ('accurateFeedback', 1), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 214), ('preFeedbackInterval', 141), ('postFeedbackInterval', 177), ('accurateFeedback', 1), ('targetLocation', 1)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 305), ('preFeedbackInterval', 123), ('postFeedbackInterval', 146), ('accurateFeedback', 1), ('targetLocation', 6)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 358), ('preFeedbackInterval', 67), ('postFeedbackInterval', 77), ('accurateFeedback', 1), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 288), ('preFeedbackInterval', 175), ('postFeedbackInterval', 84), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 293), ('preFeedbackInterval', 157), ('postFeedbackInterval', 113), ('accurateFeedback', 1), ('targetLocation', 5)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 0), ('itiFrames', 291), ('preFeedbackInterval', 152), ('postFeedbackInterval', 65), ('accurateFeedback', 1), ('targetLocation', 3)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 227), ('preFeedbackInterval', 133), ('postFeedbackInterval', 125), ('accurateFeedback', 1), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 176), ('preFeedbackInterval', 142), ('postFeedbackInterval', 75), ('accurateFeedback', 1), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 197), ('preFeedbackInterval', 70), ('postFeedbackInterval', 123), ('accurateFeedback', 1), ('targetLocation', 4)]), OrderedDict([('targetLetter', 'T'), ('isDifficult', 1), ('itiFrames', 295), ('preFeedbackInterval', 90), ('postFeedbackInterval', 143), ('accurateFeedback', 1), ('targetLocation', 2)]), OrderedDict([('targetLetter', 'L'), ('isDifficult', 1), ('itiFrames', 241), ('preFeedbackInterval', 122), ('postFeedbackInterval', 140), ('accurateFeedback', 1), ('targetLocation', 3)])]" valType="str"/>
